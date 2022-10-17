@@ -1,4 +1,9 @@
-# GifsApp
+# Angular : De cero a experto
+
+Ejercicio 02-gifsApp del curso "Angular: de cero a experto" de Fernando Herrera.
+Conexión con la API de GIPHY para mostrar gifs según búsqueda, con registro de historial.
+
+## GifsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
