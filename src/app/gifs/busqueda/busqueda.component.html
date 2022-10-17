@@ -1,8 +1,21 @@
 <h5>Buscar:</h5>
-    <input 
-    type="text" 
-    class="form-control" 
-    placeholder="Buscar gifs..." 
-    (keyup.enter)="buscar()"
-    #txtBuscar
+<form (ngSubmit)="buscar()">
+<div class="row">
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Buscar gifs..."
+      #txtBuscar
     />
+  </div>
+  <div class="col-4">
+    <select class="form-select" aria-label="Default select example">
+        <option selected name="total" #totalRes>Total Gifs</option>
+        <option value="12">12</option>
+        <option value="18">18</option>
+        <option value="30">30</option>
+      </select>
+  </div>
+</div>
+</form>
