@@ -27,7 +27,7 @@ export class GifsService {
 
   }
 
-  buscarGifs( query:string ) {
+  buscarGifs( query:string, total:number ) {
     
     query = query.trim().toLocaleLowerCase();
 
@@ -40,7 +40,7 @@ export class GifsService {
 
     const params = new HttpParams().
     set('api_key', this.apiKey).
-    set('limit', 12).
+    set('limit', total).
     set('q', query);
 
     console.log(params.toString());

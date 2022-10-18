@@ -14,10 +14,9 @@ export class BusquedaComponent {
 
   buscar() {
     const valor = this.txtBuscar.nativeElement.value;
-    //const totalGifs = Number(this.numeroGifs.nativeElement.value);
+    const totalGifs = Number(this.totalRes.nativeElement.value);
     console.log('txtBuscar', this.txtBuscar.nativeElement.value);
-    console.log('totalRes', this.totalRes.nativeElement.value);
-    this.gifsService.buscarGifs( valor );
+    this.gifsService.buscarGifs( valor, totalGifs );
     this.txtBuscar.nativeElement.value = "";
     //this.totalRes.nativeElement.value = "";
   }
